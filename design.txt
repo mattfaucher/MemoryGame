@@ -1,0 +1,77 @@
+Classes:
+    - Game:
+        Class that stores what would be global
+        variables within the help_memory file
+        -Methods:
+            - __init__
+        -Attributes:
+            - all attributes initialized within the __init__()
+            - guesses
+            - difficulty_level
+            - flipped_cards
+            - play_cards
+            - name
+            - pen (turtle object)
+            - pen_lb (turtle object)
+    - Card:
+        Class to define a card object for the turtle
+        graphics board to interact with and load
+        -Methods:
+            - __init__
+            - check_clicked
+            - flip_card
+            - hide_card
+            - delay
+            - __str__
+            - __eq__
+        -Attributes:
+            - turtle
+            - x
+            - y
+            - coordinates
+            - back
+            - gif_file
+            - visible
+            - current
+
+Functions:
+    - game_controller: Function to handle running of Memory Game functionality
+    - start_input: Function to create popup windows at start of game
+    - creat_game_window: Function to generate the game window
+    - draw_sections_controller: Function to call functions that perform drawing
+    - draw_sections: Function to draw out the necessary areas on the board using
+    draw_rectange() and add_header()
+    - draw_rectangle: Function to draw a rectangular area on the board
+    - add_header: Function to add headers to the necessary sections
+    in the game board
+    - draw_image: Function to draw an image to the board
+    - add_all_cards: function to create a list of all gif images
+    in the ./gifs folder
+    - create_card_pairs: Function to generate a list of card pairs to be used when drawing the game board
+    - draw_cards: Function to draw the cards to the game board
+    - clicked: Function to get current click coordinates and pass those
+    to other functionality
+    - check_for_quit: Function to check if user clicked the quit icon
+    - check_pair_match: Function to check if the two flipped cards are a match
+    - check_game_over: Function to check if the game has ended and all
+    matches have been found
+    - draw_guesses: Function to update the move + guess counter
+    - create_leaderboard_file: Function to generate a leaderboard JSON file
+    if one doesn't already exist in the directory
+    - update_leaderboard: Function to update the leaderboard json file
+    - sort_leaderboard: Function to sort the leaderboards using sorted lambda in an ascending order (lowest score = best)
+    - draw_leaderboard: Function to write the appropriate leaderboard
+    onto the screen
+    - loop_write: Function to loop through and write for leaderboard
+
+Data Structures Used:
+    - list
+    - dictionary
+
+
+When it came to testing I started out by testing the classes that I wrote and making sure they did what I wanted them to do in the
+terminal. I practiced this approach for all logic related functions (not UI functionality). Every time I wrote a function I would
+test it out in the terminal/my program and made sure what was expected was occurring. To determine the game was working as intended
+I played it through and tried every combination of user interaction that I could think of. I also forced my girlfriend to play 
+in a way to try to find unintended bugs. For the graphics I just looked and did visual inspection when it came to card drawing, 
+card flipping, and etc.
