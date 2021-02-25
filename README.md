@@ -6,4 +6,4 @@ In the Command line, cd into the correct directory and run python3 play_memory.p
 
 Enjoy the game!
 
-A local leaderboard will be stored inside the directory too!
+A local leaderboard will be stored inside the directory for each different difficulty level!
