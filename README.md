@@ -6,7 +6,7 @@ Clone the repo onto your machine
 
 In the Command line, cd into the correct directory and run **python3 play_memory.py**
 
-*If you run into issues not finding the Module tkinter try:*
+<ins>*If you run into issues not finding the Module tkinter try:*</ins>
 
 sudo apt-get install python-tk (for Python2)
 
