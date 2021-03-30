@@ -9,6 +9,7 @@ In the Command line, cd into the correct directory and run **python3 play_memory
 *If you run into issues not finding the Module tkinter try:*
 
 sudo apt-get install python-tk (for Python2)
+
 sudo apt-get install python3-tk (for Python3)
 
 Enjoy the game!
