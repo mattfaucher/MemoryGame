@@ -15,3 +15,8 @@ sudo apt-get install python3-tk (for Python3)
 Enjoy the game!
 
 A local leaderboard will be stored inside the directory for each different difficulty level!
+
+![Image of staring game](https://github.com/mattfaucher/MemoryGame/blob/main/images/MemoryGame1.png)
+
+
+![Image of game with a leaderboard entry added](https://github.com/mattfaucher/MemoryGame/blob/main/images/MemoryGame2.png)
